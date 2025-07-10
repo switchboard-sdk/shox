@@ -9,8 +9,11 @@
 #define CATCH_CONFIG_MAIN
 #include <catch2/catch_test_macros.hpp>
 
+namespace shox::tests {
 TEST_CASE("Platform::getExecutablePath returns a valid path", "[Platform]") {
     const auto path = shox::Platform::getExecutablePath();
     REQUIRE(!path.empty());
     REQUIRE(std::filesystem::exists(path));
+}
+
 }

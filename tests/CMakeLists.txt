@@ -10,6 +10,7 @@ FetchContent_MakeAvailable(Catch2)
 
 add_executable(${TARGET_NAME}Tests
         Platform.test.cpp
+        RingBuffer.test.cpp
 )
 target_link_libraries(${TARGET_NAME}Tests PRIVATE Catch2::Catch2WithMain)
 target_include_directories(${TARGET_NAME}Tests

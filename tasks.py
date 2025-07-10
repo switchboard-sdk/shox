@@ -22,3 +22,11 @@ def build_and_package(c):
         c.run("cpack")
         c.run("mkdir -p ../../out")
         c.run("cp shox-* ../../out/")
+
+@task
+def test(c):
+    """Run the tests"""
+    c.run("cmake -G 'Ninja Multi-Config' -S . -B build/manual -DSHOX_ENABLE_TESTING=ON")
+    c.run("cmake --build build/manual --config Debug -j 8")
+    with c.cd("build/manual/tests"):
+        c.run("ctest --output-on-failure")
