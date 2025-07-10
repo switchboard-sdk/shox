@@ -12,7 +12,7 @@ set(LIBRARY_NAME shox)
 set(TARGET_NAME ${PROJECT_NAME}_${LIBRARY_NAME})
 
 add_library(${TARGET_NAME} INTERFACE
-        include/Platform.hpp
+        include/shox/Platform.hpp
 )
 add_library(${PROJECT_NAME}::${LIBRARY_NAME} ALIAS ${TARGET_NAME})
 
