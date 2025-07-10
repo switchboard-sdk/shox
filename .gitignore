@@ -45,3 +45,6 @@
 
 # macOS
 **/.DS_Store
+
+# CMake
+build/

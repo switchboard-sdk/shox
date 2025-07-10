@@ -15,6 +15,9 @@
 #include <unistd.h>
 #endif
 
+#include <filesystem>
+#include <vector>
+
 namespace shox {
 
 /**
