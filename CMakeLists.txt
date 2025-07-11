@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.30 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.28..3.31 FATAL_ERROR)
 
 project(shox VERSION 0.1.0 LANGUAGES CXX C)
 
