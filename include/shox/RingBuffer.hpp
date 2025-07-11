@@ -174,10 +174,4 @@ private:
     }
 };
 
-// Explicit instantiation
-template class RingBuffer<char>;
-template class RingBuffer<float>;
-template class RingBuffer<int16_t>;
-template class RingBuffer<int8_t>;
-
 }
