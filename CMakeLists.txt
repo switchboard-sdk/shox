@@ -11,10 +11,7 @@ include(GNUInstallDirs)
 set(LIBRARY_NAME shox)
 set(TARGET_NAME ${PROJECT_NAME}_${LIBRARY_NAME})
 
-add_library(${TARGET_NAME} INTERFACE
-        include/shox/Platform.hpp
-        include/shox/RingBuffer.hpp
-)
+add_library(${TARGET_NAME} INTERFACE)
 add_library(${PROJECT_NAME}::${LIBRARY_NAME} ALIAS ${TARGET_NAME})
 
 target_include_directories(${TARGET_NAME}
